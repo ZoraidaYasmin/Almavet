@@ -246,7 +246,7 @@ body {
   .user-name {
     font-weight: bold;
     color: #000;
-    margin-left: 50px;
+    margin-left: 200px;
   }
   
   .logout {
@@ -259,4 +259,16 @@ body {
   .user-icon img {
     width: 30px; /* Ajusta el tamaño del icono de usuario según tus necesidades */
     height: auto;
+  }
+
+  /*Estilos de logout*/
+
+  .logout-icon {
+    color: firebrick;
+    transition: color 0.3s ease; /* Agrega una transición suave de 0.3 segundos */
+    cursor: pointer;
+  }
+
+  .logout-icon:hover {
+    color: darkred; /* Cambia el color al hacer hover */
   }
