@@ -17,14 +17,19 @@
                 <form>
                     <input type="text" placeholder="Usuario" required>
                     <input type="password" placeholder="Contraseña" required>
-                    <button type="submit">Aceptar</button>
+                    <button onclick="redireccionar()" type="submit">Aceptar</button>
                 </form>
             </div>
                         
         </div>     
     </div>  
     
-
+    <script>
+      function redireccionar() {
+        // Cambia "url_destino" por la URL a la que deseas redireccionar
+        window.location.href = "HomePrincipal.html";
+      }
+    </script>
 </body>
 <footer>
     <div class="social-icons">
