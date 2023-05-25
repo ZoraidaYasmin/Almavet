@@ -14,22 +14,17 @@
             <h1>Iniciar Sesión</h1>
             <img src="imagen/logo.jpg" alt="Perrito" class="logo">
             <div class="login-container">
-                <form>
-                    <input type="text" placeholder="Usuario" required>
-                    <input type="password" placeholder="Contraseña" required>
-                    <button onclick="redireccionar()" type="submit">Aceptar</button>
+                <form id="loginForm">
+                    <input id="username" type="text" placeholder="Usuario" required>
+                    <input id="password" type="password" placeholder="Contraseña" required>
+                     <button type="submit">Aceptar</button> 
                 </form>
+                <div id="messageContainer"></div>
             </div>
                         
         </div>     
-    </div>  
-    
-    <script>
-      function redireccionar() {
-        // Cambia "url_destino" por la URL a la que deseas redireccionar
-        window.location.href = "HomePrincipal.html";
-      }
-    </script>
+    </div>    
+    <script src="javascript/js_login.js"></script>      
 </body>
 <footer>
     <div class="social-icons">

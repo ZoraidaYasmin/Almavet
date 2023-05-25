@@ -112,3 +112,18 @@ body {
   .social-icons a:hover {
     color: #4C0B84; /* Morado más claro al pasar el cursor */
   }
+
+
+ /*para mensaje de validacion*/
+ .message {
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  background-color: #f9f9f9;
+}
+.success {
+  color: green;
+}
+.error {
+  color: red;
+} 
