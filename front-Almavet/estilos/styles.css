@@ -128,13 +128,17 @@ body {
     background-color: #B2A6A6; /* Color marrón claro */
     padding: 20px;
     height: 72vh;
+    display: inline-flex;
+    flex-direction: column;    
   }
   
   .menu {
+    width: fit-content;
+    margin-left: auto;
     list-style: none;
     padding: 0;
     margin: 0;
-    
+    order: 3;
   }
   
   .menu li {
@@ -163,6 +167,7 @@ body {
     width: 150px; /* Ajusta el tamaño según el tamaño real de tu imagen */
     margin-left: 50px;
     margin-bottom: 40px;
+    order: 2;
   }
 
   /*Estilos para el logout*/
@@ -193,3 +198,196 @@ body {
   .logout-icon:hover {
     color: darkred; /* Cambia el color al hacer hover */
   }
+
+  /*Estilos de caja de texto de buscar mascota*/
+
+  .search-box {
+    position: absolute;
+    width: 400px;
+    overflow: hidden;
+    margin-left: 500px;
+    margin-top: 30px;
+  }
+  .search-box input[type="text"] {
+    width: 100%;
+    padding: 5px 30px 5px 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    height: 20px;
+  }
+  .search-box i {
+    position: absolute;
+    top: 70%;
+    right: 10px;
+    transform: translateY(-50%);
+    color: #999;
+    pointer-events: none;
+  }
+
+  .content {
+    order: 1; /* Cambia el orden de visualización */
+    align-items: center;
+    margin-left: 500px;
+    margin-top: 30px;
+    display: inline-table;
+  }
+
+  label {
+    margin-bottom: 5px;
+  }
+
+
+  /*Botones de buscar y agregar*/
+
+  .contenedor {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .boton {
+    position: absolute;
+    top: 195px;
+    left: 55%;
+    transform: translate(-50%, -50%);
+    padding: 10px 20px;
+    background-color: #6A0DAD;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  .botonAgregar {
+    position: absolute;
+    top: 195px;
+    left: 62%;
+    transform: translate(-50%, -50%);
+    padding: 10px 20px;
+    background-color: #6A0DAD;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  /*Estilos para la tabla*/
+
+  .container-tabla {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-gap: 20px;
+    
+  }
+
+
+  #miTabla{
+    display: none;
+  }
+
+  table {
+    position: relative;   
+    border-collapse: collapse;
+  }
+  
+  table th {
+    border: 3px solid #998A8A;
+    padding: 8px;
+    text-align: center;
+  }
+  
+  table td {
+    color: gray;
+    text-decoration: none;
+    border: 3px solid #998A8A;
+    padding: 8px;
+    text-align: center;
+  }
+
+  table td a:hover {
+    color: #0a0a0a;
+    cursor: pointer;
+  }
+
+  table th {
+    background-color: #998A8A;
+  }
+
+ 
+  .responsive-table {
+    width: 80%;
+    table-layout: auto;
+    margin-left: 10%;
+    height: 60%;
+    margin-top: 190px;    
+  }
+
+
+  .eliminar {
+    cursor: pointer;
+    color: #6A0DAD;
+    text-decoration: underline;
+  }
+
+
+  /*Estilos para responsive*/
+
+  /* Estilos para pantallas de hasta 768px de ancho */
+@media screen and (max-width: 768px) {
+  .container-tabla {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .sidebar {
+    margin-bottom: 20px;
+  }
+
+  .responsive-table {
+    width: 100%;
+    overflow-x: auto;
+  }
+
+  .responsive-table td,
+  .responsive-table th {
+    white-space: nowrap;
+  }
+
+  /* Otros estilos específicos para pantallas más pequeñas */
+}
+
+/* Estilos para pantallas de hasta 480px de ancho */
+@media screen and (max-width: 480px) {
+  .menu-image {
+    display: none;
+  }
+
+  .search-box {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .search-box input {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .boton,
+  .botonAgregar {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .menu {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .menu li {
+    width: 50%;
+  }
+
+  /* Otros estilos específicos para pantallas más pequeñas */
+}

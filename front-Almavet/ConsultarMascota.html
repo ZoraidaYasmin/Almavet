@@ -46,25 +46,87 @@
       </div>
 </header>
 <body>
-  <div class="container">
-    <div class="sidebar">
-      <img src="imagen/menu.jpg" alt="Menu" class="menu-image">  
-      <ul class="menu">
-        <li><a href="#">Consulta de Propietario</a></li>
-        <li><a href="#">Registro de Propietario</a></li>
-        <li><a href="#">Consulta de Mascota</a></li>
-        <li><a href="#">Registro de Mascota</a></li>
-        <li><a href="#">Consulta de Citas</a></li>
-        <li><a href="#">Registro de Citas</a></li>
-        <li><a href="#">Historial Clinico</a></li>
-      </ul>
-    </div>
-
-    <div class="content">
-      <!-- Aquí va el contenido principal de tu página -->
-    </div>
+  <div class="container-tabla">
+  <div class="sidebar">      
+    <img src="imagen/menu.jpg" alt="Menu" class="menu-image">    
+      <!-- Label y Caja de Texto-->
+     <div class="search-box"> 
+        <label>Ingresar Nombre de Mascota</label>       
+        <input type="text" >
+        <i class="fas fa-search"></i>          
+      </div>
+      <!-- Botones de buscar y Agregar-->
+      <button id="boton-buscar" class="boton"  onclick="mostrarTabla()">BUSCAR</button>
+      <button class="botonAgregar"  onclick="">AGREGAR</button>
+      <!-- Opciones del Menu-->
+    <ul class="menu">
+      <li onclick="redireccionarConsultarPropietario()"><a href="#">Consulta de Propietario</a></li>
+      <li><a href="#">Registro de Propietario</a></li>        
+      <li onclick="redireccionarConsultarMascota()"><a href="#">Consulta de Mascota</a></li>
+      <li onclick="redireccionarRegistrarMascota()"><a href="#">Registro de Mascota</a></li>
+      <li><a href="#">Consulta de Citas</a></li>
+      <li><a href="#">Registro de Citas</a></li>
+      <li><a href="#">Historial Clinico</a></li>
+    </ul>   
 </div> 
-<script src="javascript/js_redireccionar.js"></script> 
+
+    
+      <table id="miTabla" class="responsive-table">
+        <thead>
+          <tr>
+            <th>Editar</th>
+            <th>Nro. HC</th>
+            <th>Nombre</th>
+            <th>Edad</th>
+            <th>Peso</th>
+            <th>Especie</th>
+            <th>Raza</th>
+            <th>Sexo</th>
+            <th>Eliminar</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="fila-mascota">
+            <td><a href="editar.html" style="color: #6A0DAD;"><i class="fas fa-edit"></i></a></td>
+            <td>20</td>
+            <td>Canela</td>
+            <td>5 años</td>
+            <td>14 kilos</td>
+            <td>Canino</td>
+            <td>Cocker Spaniel</td>
+            <td>Hembra</td>           
+            <td><span class="eliminar" onclick="eliminarFila(this)"><i class="fas fa-trash"></i></span></td>
+          </tr>
+          <tr class="fila-mascota">
+            <td><a href="editar.html" style="color: #6A0DAD;"><i class="fas fa-edit"></i></a></td>
+            <td>21</td>
+            <td>Negrito</td>
+            <td>5 años</td>
+            <td>5 kilos</td>
+            <td>Felino</td>
+            <td>Angora</td>
+            <td>Macho</td>
+            <td><span class="eliminar" onclick="eliminarFila(this)"><i class="fas fa-trash"></i></span></td>
+          </tr>
+          <tr class="fila-mascota">
+            <td><a href="editar.html" style="color: #6A0DAD;"><i class="fas fa-edit"></i></a></td>
+            <td>22</td>
+            <td>Blanco</td>
+            <td>9 años</td>
+            <td>6 kilos</td>
+            <td>Felino</td>
+            <td>Angora</td>
+            <td>Macho</td>
+            <td><span class="eliminar" onclick="eliminarFila(this)"><i class="fas fa-trash"></i></span></td>
+          </tr>
+          <!-- Agrega más filas según sea necesario -->
+        </tbody>
+      </table>
+    </div>
+ <!-- Tabla -->
+
+<script src="javascript/js_redireccionar.js"></script>
+<script src="javascript/js_consultar_mascota.js"></script>
 </body>
 <footer>
   <div class="social-icons">
