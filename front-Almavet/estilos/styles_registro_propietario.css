@@ -1,5 +1,5 @@
 
-.nombreMasco {
+.FomularioRegistroPropi {
     position: relative;
 }
 
@@ -47,15 +47,26 @@
 
 .custom-label-correo {
     position: relative;
-    
-    top: 250px;
+    top: 260px;
+    left: -223px;
    
 }
 
 .custom-input-correo {
     position: absolute;
-    top: 300px;
+    top: 285px;
     left: 200px;
     width: 200px; /* Ancho de la caja de texto */
     height: 20px; /* Altura de la caja de texto */
 }
+
+.titulo-registrar-propi {
+    position: absolute;
+    top: 20px;
+    left: 450px;
+    font-size: 25px;
+    font-weight: bold;
+    white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  }

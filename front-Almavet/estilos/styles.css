@@ -236,8 +236,16 @@ body {
     margin-bottom: 5px;
   }
 
+  .titulo-consultar-mascota {
+    position: absolute;
+    top: 120px;
+    left: 650px;
+    font-size: 25px;
+    font-weight: bold;
+  }
 
-  /*Botones de buscar y agregar*/
+
+  /*Botones de buscar y agregar y guardar*/
 
   .contenedor {
     position: relative;
@@ -261,6 +269,19 @@ body {
     position: absolute;
     top: 195px;
     left: 62%;
+    transform: translate(-50%, -50%);
+    padding: 10px 20px;
+    background-color: #6A0DAD;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  .botonGuardar {
+    position: absolute;
+    top: 296px;
+    left: 120%;
     transform: translate(-50%, -50%);
     padding: 10px 20px;
     background-color: #6A0DAD;
