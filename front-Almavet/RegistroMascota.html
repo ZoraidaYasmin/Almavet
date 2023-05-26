@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Veterinaria Almavet</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="stylesheet" href="estilos/styles.css">
+  <link rel="stylesheet" href="estilos/style_registro_mascota.css">
+</head>
+<header>
+  <img src="imagen/logo.jpg" alt="Perrito" class="logo">
+  <div class="header-icons">
+      <span>
+        <i class="fas fa-map-marker-alt"></i>
+        <span>Av. Sucre 321, Pueblo Libre</span>
+      </span>
+      <span>
+          <i class="fas fa-phone"></i>
+          <span>997085767</span>
+        </span> 
+      <span>
+        <i class="fas fa-envelope"></i>
+        <span>almavet@gmail.com</span>
+      </span>               
+    </div>     
+    <div class="social-media-icons">
+      <a href="#" target="_blank">
+        <i class="fab fa-facebook-f"></i>
+      </a>
+      <a href="#" target="_blank">
+        <i class="fab fa-twitter"></i>
+      </a>
+      <a href="#" target="_blank">
+        <i class="fab fa-instagram"></i>
+      </a>
+      <a href="#" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+      </a>
+    </div>
+  
+      <div class="user-info">
+        <span class="user-name">Zoraida</span>               
+      </div>
+      <div class="logout-icon">
+        <a onclick="redireccionar()" target="_blank" rel="noopener noreferrer"><i class="fas fa-sign-out-alt logout-icon"></i></a>
+      </div>
+      <script>
+        function redireccionar() {
+          // Cambia "url_destino" por la URL a la que deseas redireccionar
+          window.location.href = "Login.html";
+        }
+      </script>
+</header>
+<body>
+  <div class="container">
+    <div class="sidebar">
+      <img src="imagen/menu.jpg" alt="Menu" class="menu-image">  
+      <ul class="menu">
+        <li><a href="#">Consulta de Propietario</a></li>
+        <li><a href="#">Registro de Propietario</a></li>
+        <li><a href="#">Consulta de Mascota</a></li>
+        <li><a href="#">Registro de Mascota</a></li>
+        <li><a href="#">Consulta de Citas</a></li>
+        <li><a href="#">Registro de Citas</a></li>
+        <li><a href="#">Historial Clinico</a></li>
+      </ul>
+    </div>
+
+    <!-- Aquí va el contenido del formulario -->
+
+    <div class="nombreMasco">
+      
+      <label for="nombre" class="custom-label-nombre">Ingresar Nombre:</label>
+      <input type="text" id="nombre" class="custom-input-nombre">
+
+      <label for="especie" class="custom-label-especie">Ingresar Especie:</label>
+      <input type="text" id="especie" class="custom-input-especie">
+
+      <label for="dni" class="custom-label-dni">Ingresar DNI del Cliente:</label>
+      <input type="text" id="dni" class="custom-input-dni">
+
+    </div>
+</div>  
+</body>
+<footer>
+  <div class="social-icons">
+      <a href="#" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook-f"></i></a>
+      <a href="#" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i></a>
+      <a href="#" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
+      <a href="#" target="_blank" rel="noopener noreferrer"><i class="fab fa-whatsapp"></i></a>
+    </div>
+  <div class="footer-icons">
+    <span>
+      <i class="fas fa-map-marker-alt"></i>
+      <span>Av. Sucre 321, Pueblo Libre</span>
+    </span>
+    <span>
+      <i class="fas fa-phone"></i>
+      <span>997085767</span>
+    </span>
+    <span>
+      <i class="fas fa-envelope"></i>
+      <span>almavet@gmail.com</span>
+    </span>
+  </div>
+</footer>
+</html>
