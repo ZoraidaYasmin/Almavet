@@ -230,3 +230,36 @@ body {
     width: 25%; /* 100% del ancho del contenedor */
     
   }
+
+  /*NUEVO*/
+  body{
+    background: #eeee;
+  }
+
+  #side_nav{
+    background: #000;
+    min-width: 280px;
+    max-width: 350px;
+  }
+
+  .content{
+    min-height: 100vh;
+    width: 100%;
+  }
+
+  hr.h-color{
+    background: #eee;
+  }
+
+  .sidebar li.active{
+    background: #eee;
+    border-radius: 8px;
+  }
+
+  .sidebar li.active a, .sidebar li.active a:hover {
+    color: #000;
+  }
+
+  .sidebar li a{
+    color: #fff;
+  }

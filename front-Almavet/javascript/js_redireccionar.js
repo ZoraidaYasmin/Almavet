@@ -5,7 +5,7 @@ function redireccionarConsultarMascota() {
 
   function redireccionarLogout() {
     // Cambia "url_destino" por la URL a la que deseas redireccionar
-    window.location.href = "Login.html";
+    window.location.href = "Login2.html";
   }
 
   function redireccionarConsultarPropietario() {

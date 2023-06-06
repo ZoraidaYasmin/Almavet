@@ -127,3 +127,17 @@ body {
 .error {
   color: red;
 } 
+
+
+.btn-custom {
+  background-color: #121682; /* Cambia #ff0000 por el color personalizado que desees */
+  }
+
+.btn-custom:hover,
+.btn-custom:focus {
+    background-color: #3C42E3; /* Cambia #ff0000 por el color deseado */
+}
+
+.bg-red {
+  background-color: #F7C9EE;
+}
