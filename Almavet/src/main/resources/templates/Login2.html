@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -13,7 +14,7 @@
     />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet">
 
-    <link rel="stylesheet" href="Almavet/src/main/resources/styles/styles_login.css">
+    <link rel="stylesheet" th:href="@{../styles/styles_login.css}">
 
   </head>
   <body class="bg-red d-flex justify-content-center align-items-center vh-100">
@@ -23,7 +24,7 @@
     >
       <div class="d-flex justify-content-center">
         <img
-          src="Almavet/src/main/resources/static/login-icon.svg"
+          th:src="@{login-icon.svg}"
           alt="login-icon"
           style="height: 7rem"
         />
@@ -32,7 +33,7 @@
       <div class="input-group mt-4">
         <div class="input-group-text btn-custom">
           <img
-            src="src/main/resources/static/username-icon.svg"
+            th:src="@{username-icon.svg}"
             alt="username-icon"
             style="height: 1rem"
           />
@@ -46,7 +47,7 @@
       <div class="input-group mt-1">
         <div class="input-group-text btn-custom">
           <img
-            src="src/main/resources/static/password-icon.svg"
+            th:src="@{password-icon.svg}"
             alt="password-icon"
             style="height: 1rem"
           />
@@ -75,7 +76,7 @@
 
       <div class="d-flex justify-content-center">
         <img
-          src="src/main/resources/static/logo.jpg"
+          th:src="@{logo.jpg}"
           alt="login-icon"
           style="height: 7rem"
         />

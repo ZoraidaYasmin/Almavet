@@ -1,9 +1,7 @@
 package com.example.Almavet.Controller;
 
 import com.example.Almavet.Entity.Cliente;
-import com.example.Almavet.Entity.Pet;
 import com.example.Almavet.Service.ClienteService;
-import com.example.Almavet.Service.impl.ClienteServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
