@@ -1,0 +1,143 @@
+/* Estilos generales */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #D9D9D9;
+  }
+  
+
+  .logo {
+    width: 80px; /* Ajusta el tamaño según el tamaño real de tu imagen */
+  
+  }
+  
+/*Estilos del cuadro del medio*/
+  .body-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 87vh;
+  }
+ 
+  .box {
+    width: 500px;
+    height: 500px;
+    background-color: #F8F1F1;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    text-align: center;
+    
+  }
+
+  /*Estilos para el login*/
+  .login-container {
+    max-width: 300px;
+    margin: 0 auto;   
+    padding: 20px;
+    margin-top: 10px;
+  }
+  
+  .login-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .login-container input[type="text"],
+  .login-container input[type="password"] {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 40px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  .login-container button {
+    width: 100%;
+    padding: 10px;
+    background-color: #491888; 
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    
+    cursor: pointer;
+  }
+  
+  .login-container button:hover {
+    background-color: #3633B1;
+  }
+  /* Estilos del pie de página */
+  footer {
+    background-color: #fff;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .footer-icons {
+    margin-top: 20px;    
+  }
+  
+  .footer-icons i {
+    color: #000;
+  }
+  .footer-icons span {
+    display: inline-flex;
+    align-items: center;
+    margin-right: 20px;
+    color: #000;
+  }
+  
+  .footer-icons i {
+    margin-right: 5px;
+    font-size: 20px;
+  }
+
+  /* Estilos de redes sociales footer*/
+
+  .social-icons {
+    margin-top: 20px;
+  }
+  
+  .social-icons a {
+    display: inline-block;
+    margin-right: 10px;
+    color: #6A0DAD; /* Morado oscuro */
+    font-size: 20px;
+  }
+  
+  .social-icons a:hover {
+    color: #4C0B84; /* Morado más claro al pasar el cursor */
+  }
+
+
+ /*para mensaje de validacion*/
+ .message {
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  background-color: #f9f9f9;
+}
+.success {
+  color: green;
+}
+.error {
+  color: red;
+} 
+
+
+.btn-custom {
+  background-color: #121682; /* Cambia #ff0000 por el color personalizado que desees */
+  }
+
+.btn-custom:hover,
+.btn-custom:focus {
+    background-color: #3C42E3; /* Cambia #ff0000 por el color deseado */
+}
+
+.bg-red {
+  background-color: #F7C9EE;
+}

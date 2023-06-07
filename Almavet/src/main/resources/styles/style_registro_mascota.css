@@ -1,0 +1,126 @@
+
+.FomularioRegistroMasco {
+    position: relative;
+}
+
+.custom-label-nombre {
+    position: relative;
+    top: 90px;
+    left: 180px;
+}
+
+.custom-input-nombre {
+    position: absolute;
+    top: 110px;
+    left: 180px;
+    width: 200px; /* Ancho de la caja de texto */
+    height: 20px; /* Altura de la caja de texto */
+}
+
+.custom-label-especie {
+    position: relative;
+    top: 90px;
+    left: 320px;
+}
+
+.custom-input-especie {
+    position: absolute;
+    top: 110px;
+    left: 450px;
+    width: 200px; /* Ancho de la caja de texto */
+    height: 20px; /* Altura de la caja de texto */
+}
+
+.custom-label-dni {
+    position: relative;
+    top: 90px;
+    left: 482px;
+}
+
+.custom-input-dni {
+    position: absolute;
+    top: 110px;
+    left: 740px;
+    width: 200px; /* Ancho de la caja de texto */
+    height: 20px; /* Altura de la caja de texto */
+}
+
+.custom-label-edad {
+    position: relative;
+    top: 180px;
+    left: -255px;
+}
+
+.custom-input-edad {
+    position: absolute;
+    top: 205px;
+    left: 180px;
+    width: 200px; /* Ancho de la caja de texto */
+    height: 20px; /* Altura de la caja de texto */
+}
+
+.custom-label-raza {
+    position: relative;
+    top: 180px;
+    left: -95px;
+}
+
+.custom-input-raza {
+    position: absolute;
+    top: 205px;
+    left: 450px;
+    width: 200px; /* Ancho de la caja de texto */
+    height: 20px; /* Altura de la caja de texto */
+}
+
+.custom-label-peso {
+    position: relative;
+    top: 270px;
+    left: -475px;
+}
+
+.custom-input-peso {
+    position: absolute;
+    top: 300px;
+    left: 180px;
+    width: 200px; /* Ancho de la caja de texto */
+    height: 20px; /* Altura de la caja de texto */
+}
+
+
+.custom-label-sexo {
+    position: relative;
+    top: 271px;
+    left: -310px;
+}
+.radio-sexo {
+    position: relative;
+    left: 450px;
+    top: 280px;
+  }
+  
+  .radio-sexo input[type="radio"] {
+    margin-bottom: 5px;
+  }
+
+  .botonGuardarMasco {
+    position: absolute;
+    top: 296px;
+    left: 100%;
+    transform: translate(-50%, -50%);
+    padding: 10px 20px;
+    background-color: #6A0DAD;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  .titulo-registrar-mascota {
+    position: absolute;
+    top: 20px;
+    left: 450px;
+    font-size: 25px;
+    font-weight: bold;
+  }
+
